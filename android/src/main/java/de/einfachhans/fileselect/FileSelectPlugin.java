@@ -67,7 +67,7 @@ public class FileSelectPlugin extends Plugin {
         }
         type = type.substring(0, type.length() - 1);
 
-        // chooseFile.putExtra(Intent.EXTRA_MIME_TYPES, supportedMimeTypes.toArray());
+        chooseFile.putExtra(Intent.EXTRA_MIME_TYPES, supportedMimeTypes.toArray());
         chooseFile.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, multiple);
         chooseFile.setType(type);
         chooseFile.addCategory(Intent.CATEGORY_OPENABLE);
